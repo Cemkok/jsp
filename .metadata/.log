@@ -780,3 +780,197 @@ java.lang.IllegalArgumentException: object is not an instance of declaring class
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.wst.validation 4 0 2022-04-16 16:05:50.623
+!MESSAGE OperationCanceledException
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException: 
+	at org.eclipse.wst.validation.internal.FilterUtil.checkCanceled(FilterUtil.java:76)
+	at org.eclipse.wst.validation.internal.FilterUtil.filterOut(FilterUtil.java:374)
+	at org.eclipse.wst.validation.internal.FilterUtil.filterOut(FilterUtil.java:433)
+	at org.eclipse.wst.validation.internal.FilterUtil$2.visit(FilterUtil.java:631)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:56)
+	at org.eclipse.wst.validation.internal.FilterUtil.loadDeltas(FilterUtil.java:647)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.loadFileDeltas(ValidationOperation.java:547)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.getFileDeltas(ValidationOperation.java:519)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.preValidate(ValidationOperation.java:791)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.run(ValidationOperation.java:653)
+	at org.eclipse.wst.validation.internal.operations.ValidationBuilder.build(ValidationBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:860)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:392)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:417)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.validation 4 0 2022-04-16 16:06:38.945
+!MESSAGE OperationCanceledException
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException: 
+	at org.eclipse.wst.validation.internal.FilterUtil.checkCanceled(FilterUtil.java:76)
+	at org.eclipse.wst.validation.internal.FilterUtil.filterOut(FilterUtil.java:374)
+	at org.eclipse.wst.validation.internal.FilterUtil.filterOut(FilterUtil.java:433)
+	at org.eclipse.wst.validation.internal.FilterUtil$2.visit(FilterUtil.java:631)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:56)
+	at org.eclipse.wst.validation.internal.FilterUtil.loadDeltas(FilterUtil.java:647)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.loadFileDeltas(ValidationOperation.java:547)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.getFileDeltas(ValidationOperation.java:519)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.preValidate(ValidationOperation.java:791)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.run(ValidationOperation.java:653)
+	at org.eclipse.wst.validation.internal.operations.ValidationBuilder.build(ValidationBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:860)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:392)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:417)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-04-16 16:06:41.314
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.wst.validation 4 0 2022-04-16 16:06:47.380
+!MESSAGE OperationCanceledException
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException: 
+	at org.eclipse.wst.validation.internal.FilterUtil.checkCanceled(FilterUtil.java:76)
+	at org.eclipse.wst.validation.internal.FilterUtil$2.visit(FilterUtil.java:610)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:56)
+	at org.eclipse.wst.validation.internal.FilterUtil.loadDeltas(FilterUtil.java:647)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.loadFileDeltas(ValidationOperation.java:547)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.getFileDeltas(ValidationOperation.java:519)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.preValidate(ValidationOperation.java:791)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.run(ValidationOperation.java:653)
+	at org.eclipse.wst.validation.internal.operations.ValidationBuilder.build(ValidationBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:860)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:392)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:417)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jboss.tools.vpe.preview.core 4 0 2022-04-16 16:22:30.990
+!MESSAGE INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified.
+!STACK 0
+org.w3c.dom.DOMException: INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified.
+	at java.xml/com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl.createAttribute(CoreDocumentImpl.java:573)
+	at java.xml/com.sun.org.apache.xerces.internal.dom.ElementImpl.setAttribute(ElementImpl.java:503)
+	at org.jboss.tools.vpe.preview.core.template.VpvDefaultTemplate.create(VpvDefaultTemplate.java:39)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:86)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.buildVisualModel(VpvDomBuilder.java:49)
+	at org.jboss.tools.vpe.preview.core.transform.VpvController.getVisualModel(VpvController.java:145)
+	at org.jboss.tools.vpe.preview.core.transform.VpvController.getResource(VpvController.java:62)
+	at org.jboss.tools.vpe.preview.core.server.VpvSocketProcessor.processRequest(VpvSocketProcessor.java:83)
+	at org.jboss.tools.vpe.preview.core.server.VpvSocketProcessor.run(VpvSocketProcessor.java:68)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.jboss.tools.vpe.preview.core 4 0 2022-04-16 16:23:20.904
+!MESSAGE INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified.
+!STACK 0
+org.w3c.dom.DOMException: INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified.
+	at java.xml/com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl.createAttribute(CoreDocumentImpl.java:573)
+	at java.xml/com.sun.org.apache.xerces.internal.dom.ElementImpl.setAttribute(ElementImpl.java:503)
+	at org.jboss.tools.vpe.preview.core.template.VpvDefaultTemplate.create(VpvDefaultTemplate.java:39)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:86)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.buildVisualModel(VpvDomBuilder.java:49)
+	at org.jboss.tools.vpe.preview.core.transform.VpvController.getVisualModel(VpvController.java:145)
+	at org.jboss.tools.vpe.preview.core.transform.VpvController.getResource(VpvController.java:62)
+	at org.jboss.tools.vpe.preview.core.server.VpvSocketProcessor.processRequest(VpvSocketProcessor.java:83)
+	at org.jboss.tools.vpe.preview.core.server.VpvSocketProcessor.run(VpvSocketProcessor.java:68)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.jboss.tools.vpe.preview.core 4 0 2022-04-16 16:23:21.644
+!MESSAGE INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified.
+!STACK 0
+org.w3c.dom.DOMException: INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified.
+	at java.xml/com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl.createAttribute(CoreDocumentImpl.java:573)
+	at java.xml/com.sun.org.apache.xerces.internal.dom.ElementImpl.setAttribute(ElementImpl.java:503)
+	at org.jboss.tools.vpe.preview.core.template.VpvDefaultTemplate.create(VpvDefaultTemplate.java:39)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:86)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.buildVisualModel(VpvDomBuilder.java:49)
+	at org.jboss.tools.vpe.preview.core.transform.VpvController.getVisualModel(VpvController.java:145)
+	at org.jboss.tools.vpe.preview.core.transform.VpvController.getResource(VpvController.java:62)
+	at org.jboss.tools.vpe.preview.core.server.VpvSocketProcessor.processRequest(VpvSocketProcessor.java:83)
+	at org.jboss.tools.vpe.preview.core.server.VpvSocketProcessor.run(VpvSocketProcessor.java:68)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.jboss.tools.vpe.preview.core 4 0 2022-04-16 16:39:50.122
+!MESSAGE INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified.
+!STACK 0
+org.w3c.dom.DOMException: INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified.
+	at java.xml/com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl.createAttribute(CoreDocumentImpl.java:573)
+	at java.xml/com.sun.org.apache.xerces.internal.dom.ElementImpl.setAttribute(ElementImpl.java:503)
+	at org.jboss.tools.vpe.preview.core.template.VpvDefaultTemplate.create(VpvDefaultTemplate.java:39)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:86)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.buildVisualModel(VpvDomBuilder.java:49)
+	at org.jboss.tools.vpe.preview.core.transform.VpvController.getVisualModel(VpvController.java:145)
+	at org.jboss.tools.vpe.preview.core.transform.VpvController.getResource(VpvController.java:62)
+	at org.jboss.tools.vpe.preview.core.server.VpvSocketProcessor.processRequest(VpvSocketProcessor.java:83)
+	at org.jboss.tools.vpe.preview.core.server.VpvSocketProcessor.run(VpvSocketProcessor.java:68)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.jboss.tools.vpe.preview.core 4 0 2022-04-16 16:39:51.999
+!MESSAGE INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified.
+!STACK 0
+org.w3c.dom.DOMException: INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified.
+	at java.xml/com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl.createAttribute(CoreDocumentImpl.java:573)
+	at java.xml/com.sun.org.apache.xerces.internal.dom.ElementImpl.setAttribute(ElementImpl.java:503)
+	at org.jboss.tools.vpe.preview.core.template.VpvDefaultTemplate.create(VpvDefaultTemplate.java:39)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:86)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.buildVisualModel(VpvDomBuilder.java:49)
+	at org.jboss.tools.vpe.preview.core.transform.VpvController.getVisualModel(VpvController.java:145)
+	at org.jboss.tools.vpe.preview.core.transform.VpvController.getResource(VpvController.java:62)
+	at org.jboss.tools.vpe.preview.core.server.VpvSocketProcessor.processRequest(VpvSocketProcessor.java:83)
+	at org.jboss.tools.vpe.preview.core.server.VpvSocketProcessor.run(VpvSocketProcessor.java:68)
+	at java.base/java.lang.Thread.run(Thread.java:834)

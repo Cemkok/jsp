@@ -1,0 +1,5 @@
+package jspaction.controller;
+
+public class PersonController {
+
+}
