@@ -33,8 +33,8 @@ public class EmployeeController extends HttpServlet{
 		
 		//RequestDispatcher dispatcher = req.getRequestDispatcher("employee.jsp");
 		//RequestDispatcher dispatcher = req.getRequestDispatcher("employeeUseBean.jsp");
-		RequestDispatcher dispatcher = req.getRequestDispatcher("employeeExpressionLanguage.jsp");
-		dispatcher.forward(req, resp);
+		//RequestDispatcher dispatcher = req.getRequestDispatcher("employeeExpressionLanguage.jsp");
+		//dispatcher.forward(req, resp);
 		//
 	
 	}

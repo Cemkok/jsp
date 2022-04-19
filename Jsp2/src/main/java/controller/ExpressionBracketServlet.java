@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,6 +22,11 @@ public class ExpressionBracketServlet extends HttpServlet{
 	Map<String, String> map= new HashMap<String, String>();
 	
 
+	map.put("key1","value1");
+	map.put("key2","value2");
+	map.put("key3","value3");
+	map.put("key4","value4");
+	
 	
 	List<String> myList = new ArrayList<String>();
 	
@@ -29,6 +35,13 @@ public class ExpressionBracketServlet extends HttpServlet{
 	myList.add("element3");
 	myList.add("element4");
 	
+
+	req.setAttribute("myMap", map);
+	
+	req.setAttribute("Listem", myList);
+	RequestDispatcher dispatcher=req.getRequestDispatcher("/ExpressionLanguageBracket.jsp");
+	
+	dispatcher.forward(req, resp);
 	
 	
 	}
